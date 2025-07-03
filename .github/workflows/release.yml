@@ -17,6 +17,6 @@ jobs:
           cache-dependency-path: 'package-lock.json'
           registry-url: 'https://registry.npmjs.org'
       - run: |
-          npm install && npm run build && npm publish
+          npm install && npm run build && npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GEMINI_CLI_NPM_TOKEN }}
