@@ -104,7 +104,7 @@ export async function createContentGenerator(
   sessionId?: string,
 ): Promise<ContentGenerator> {
   const version = process.env.CLI_VERSION || process.version;
-  const baseUrl = process.env.GEMINI_BASE_URL;
+  const baseUrl = process.env.GOOGLE_GEMINI_BASE_URL;
   const httpOptions = {
     headers: {
       'User-Agent': `GeminiCLI/${version} (${process.platform}; ${process.arch})`,
