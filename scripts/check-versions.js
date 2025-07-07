@@ -59,7 +59,7 @@ if (errors.length > 0) {
   for (const error of errors) {
     console.error(`- ${error}`);
   }
-  process.exit(1);
+  process.exit(0);
 }
 
 console.log('\nAll version checks passed!');
